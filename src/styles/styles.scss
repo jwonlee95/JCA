@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+//components
+@import "./components/navbar";
+
+//pages
+@import "./pages/home";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+.appWrapper {
+  max-width: 1260px;
+  margin: auto;
+  height: 80px;
+}
+
+.text-center {
+  text-align: center;
+}
+th {
+  font-family: $inter;
+  color: $theme-color;
+}
+
+.flex {
+  display: flex;
+}
+.justify {
+  justify-content: center;
+}
+.align {
+  align-items: center;
+}
+.capitalize {
+  text-transform: capitalize;
+}
