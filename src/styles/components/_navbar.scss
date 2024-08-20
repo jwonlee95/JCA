@@ -1,38 +1,59 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-nav {
-  max-width: 1260px;
-  margin: auto;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
+  margin: auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
   font-family: $raleway;
   font-weight: 700;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  opacity: 1;
+  background: transparent;
+  border-bottom: none;
 
   img {
     width: 150px;
     cursor: pointer;
   }
 
-  // About us button
   .aboutBtn {
     color: $dark-theme-color;
     font-family: inherit;
-    font-weight: 700;
+    font-weight: inherit;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $dark-theme-color;
+      transform: scaleX(0);
+      transform-origin: right;
+    }
 
     &:before {
       top: 0;
       right: 0;
       @include transition();
     }
+
     &:after {
       bottom: 0;
       right: 0;
       @include transition();
     }
+
     &:hover {
       background-color: white;
 
@@ -42,19 +63,26 @@ nav {
       }
     }
   }
+
   .authStack {
     display: flex;
     align-items: center;
   }
 
-  //login button
   .loginBtn {
     font-family: inherit;
     font-weight: inherit;
+    width: 180px;
     @include button-layout($theme-color, $white);
+
     &:hover {
       background-color: $dark-theme-color;
     }
-    width: 180px;
+  }
+
+  &.scrolled {
+    opacity: 1;
+    background: white;
+    border-bottom: 1px solid #ccc;
   }
 }
