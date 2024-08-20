@@ -10,3 +10,34 @@
     color: $light-gray;
   }
 }
+
+.first-section {
+  background-image: url("../../assets/images/background1.png");
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.second-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.third-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
