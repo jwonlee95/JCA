@@ -5,8 +5,11 @@ export const Home: React.FC<{}> = () => {
   return (
     <AppWrapper title="Home">
       <section className="first-section">
-        <h1>Welcome to the Home Page</h1>
-        <p>This is the first section.</p>
+        <div className="inside">
+          <div style={{ height: 126 }} />
+          <p>This is the first section.</p>
+          <p>This is the first section.</p>
+        </div>
       </section>
       <section className="second-section">
         <h2>Second Section</h2>

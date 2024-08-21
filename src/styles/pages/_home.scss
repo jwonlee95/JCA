@@ -15,11 +15,27 @@
   background-image: url("../../assets/images/background1.png");
   height: 50vh;
   width: 100%;
-  display: flex;
+  display: table;
+  padding-top: 90px;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
+}
+
+.inside {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+}
+
+.first-desc {
+  width: 100%;
+  padding-left: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: red;
 }
 
 .second-section {
